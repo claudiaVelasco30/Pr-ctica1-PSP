@@ -84,7 +84,10 @@ def parte2_ej2():
             print(f"El padre recibe algo del pipe: {mensajeArchivoPadre}")
 
             os.close(fdArchivo[0])
+def main():
+    #Llamamos a las dos funciones
+    parte2_ej1()
+    parte2_ej2()
 
-#Llamamos a las dos funciones
-parte2_ej1()
-parte2_ej2()
+if __name__ == "__main__":
+    main()
