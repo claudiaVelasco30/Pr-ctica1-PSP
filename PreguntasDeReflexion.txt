@@ -1,0 +1,16 @@
+¿Qué ventajas y desventajas tiene la ejecución de programas de manera síncrona versus asíncrona?
+La ventaja que tiene la ejecución síncrona es que es más facil de programar pero es más lenta y afecta más a los
+procesos largos debido a que bloquea el flujo principal del programa. Por otra parte, la programación asíncrona es más
+eficiente ya que que el programa no se bloquea y puede realizar otras tareas mientras que una finaliza. En cambio,
+la programación asíncronaes más compleja y requiere el uso de librerías como asyncio.
+
+¿Por qué es importante manejar las excepciones al trabajar con procesos?
+Manejar excepciones es importante al trabajar con procesos externos ya que estos pueden generar múltiples errores como
+por ejemplo permisos insuficientes, archivos inexistentes o fallos en la red. Controlar las excepciones garantiza que
+el programa  frunciona correctamente y pueda informar al usuario de los posibles problemas.
+
+¿Qué tipo de problemas se pueden presentar al comunicarse entre procesos? ¿Cómo los has solucionado?
+Uno de los principales problemas de la comunicación entre procesos es la sincronización de los datos que ocurre cuando
+los dos procesos intentan leer o escribir datos al mismo tiempo sin un orden, esto puede generar una pérdida de datos.
+Para solucionarlo se utiliza el método os.wait() que permite al proceso padre esperar a que el proceso termine antes de
+continuar con su código.

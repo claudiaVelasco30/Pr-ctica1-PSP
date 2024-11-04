@@ -1,4 +1,3 @@
-
 import subprocess #Librería para ejecutar programas y comandos del sistema operativo
 import asyncio #Librería para trabajar con programación asíncrona en Python
 import time #Librería para medir el tiempo
